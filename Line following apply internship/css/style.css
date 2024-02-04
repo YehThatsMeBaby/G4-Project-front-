@@ -635,6 +635,72 @@ section{
    padding-top: 1.5rem;
 }
 
+.view-student .details{
+   background-color: var(--black);
+   border: var(--border);
+   border-radius: .5rem;
+   background-color: var(--black);
+   padding: 2rem;
+}
+
+.view-student .details .info{
+   max-width: 30rem;
+   margin: 0 auto;
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   padding: 3rem 2rem;
+   text-align: center;
+}
+
+.view-student .details .info img{
+   height: 10rem;
+   width: 10rem;
+   object-fit: contain;
+   margin-bottom: 1rem;
+}
+
+.view-student .details .info h3{
+   padding: 1.5rem 0;
+   font-size: 2rem;
+   color: var(--white);
+}
+
+.view-student .details .info p{
+   font-size: 1.6rem;
+   color: var(--light-color);
+}
+
+.view-student .details .info p i{
+   margin-right: .5rem;
+   color: var(--main-color);
+}
+
+.view-student .details .description{
+   margin-top: 2rem;
+}
+
+.view-student .details .description h3{
+   font-size: 2.5rem;
+   color: var(--white);
+   padding: 1rem 0;
+   text-transform: capitalize;
+}
+
+.view-student .details .description p{
+   padding: .5rem 0;
+   font-size: 1.6rem;
+   color: var(--light-color);
+   line-height: 1.8;
+}
+
+.view-student .details ul li{
+   margin-left: 3rem;
+   font-size: 1.6rem;
+   color: var(--light-color);
+   padding-top: 1.5rem;
+}
+
+
 .footer .grid{
    display: grid;
    grid-template-columns: repeat(auto-fit, 30rem);
