@@ -2,19 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :root{
-   /* --main-color:#2980b9; */
-   /* --main-color:#ffd32a; */
    --main-color:#00D1FF;
    --red:red;
-   /* --light-color:#777;
-   --light-bg:#eee;
-   --black:#2c3e50;
-   --black:#fff;
-   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-   --border:.1rem solid rgba(0,0,0,.2); */
    --light-color:#aaa;
-   /* --light-bg:#201030;
-   --black:#110021; */
    --light-bg:#2d353d;
    --black:#1e272e;
    --white:#fff;
@@ -509,6 +499,7 @@ section{
    color: var(--black);
 }
 
+
 .account-form-container {
    background: url('../images/background.jpg');
    background-size: cover;
@@ -700,7 +691,6 @@ section{
    padding-top: 1.5rem;
 }
 
-
 .footer .grid{
    display: grid;
    grid-template-columns: repeat(auto-fit, 30rem);
@@ -750,7 +740,6 @@ section{
    text-transform: capitalize;
 }
 
-/* media queries  */
 
 @media (max-width:991px){
 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>All Jobs</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+      <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> JobPlace.</a>
+
+      <nav class="navbar">
+         <a href="home.html">home</a>
+      </nav>
+
+      <a href="post_jobs.html" class="btn" style="margin-top: 0;">post job</a>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- all jobs section starts  -->
+
+<section class="jobs-container">
+
+   <h1 class="heading">My own jobs</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="company">
+            <img src="images/icon-1.png" alt="">
+            <div>
+               <h3>IT infosys co.</h3>
+               <p>2 days ago</p>
+            </div>
+         </div>
+         <h3 class="job-title">senior web developer</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i> <span>mumbai, india</span></p>
+         <div class="tags">
+            <p><i class="fas fa-indian-rupee-sign"></i> <span>10k - 25k</span></p>
+            <p><i class="fas fa-briefcase"></i> <span>internship</span></p>
+            <p><i class="fas fa-clock"></i> <span>5 days per week</span></p>
+         </div>
+         <div class="flex-btn">
+            <a href="view_job.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" name="save"></button>
+         </div>
+      </div>
+   </div>
+</section>
+<!--all jobs section ends-->
+
+<!-- all student section starts  -->
+
+<section class="jobs-container">
+
+   <h1 class="heading">all students</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="company">
+            <img src="/images/profilepics.jpg" alt="">
+            <div>
+               <h3>Hoshino Ai</h3>
+               <p>2 days ago</p>
+            </div>
+         </div>
+         <h3 class="job-title">senior web developer</h3>
+
+         <div class="tags">
+            <p><span>html5 and css3</span></p>
+            <p><span>javascript</span></p>
+            <p><span>mysql</span></p>
+         </div>
+         <div class="flex-btn">
+            <a href="/view_student_apply.html" class="btn">view details</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="company">
+            <img src="/images/profilepics2.jpg" alt="">
+            <div>
+               <h3>John Doe</h3>
+               <p>8 hours ago</p>
+            </div>
+         </div>
+         <h3 class="job-title">qualified developer</h3>
+         <div class="tags">
+            <p><span>javascript</span></p>
+            <p><span>mysql</span></p>
+            <p><span>html5 and css3</span></p>
+         </div>
+         <div class="flex-btn">
+            <a href="/view_student_apply.html" class="btn">view details</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="company">
+            <img src="/images/icon-3.png" alt="">
+            <div>
+               <h3>Jennifer Kim</h3>
+               <p>5 days ago</p>
+            </div>
+         </div>
+         <h3 class="job-title">javascript developer</h3>
+         <div class="tags">
+            <p><span>mysql</span></p>
+            <p><span>html5 and css3</span></p>
+            <p><span>javascript</span></p>
+         </div>
+         <div class="flex-btn">
+            <a href="/view_student_apply.html" class="btn">view details</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<!-- all student section ends -->
+<section></section>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+
+let dropdown_items = document.querySelectorAll('.job-filter form .dropdown-container .dropdown .lists .items');
+
+dropdown_items.forEach(items =>{
+   items.onclick = () =>{
+      items_parent = items.parentElement.parentElement;
+      let output = items_parent.querySelector('.output');
+      output.value = items.innerText;
+   }
+});
+
+</script>
+
+   
+</body>
+</html>
